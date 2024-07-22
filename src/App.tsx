@@ -3,6 +3,11 @@ import hreoBgc from './assets/netflix_hero_background.jpg';
 import tvFrame from './assets/tv-remote-frame.png';
 import downloadMobileImage from './assets/download-mobile-img.jpg';
 import downloadMobileImageGIF from './assets/download-mobile-img-gif.jpg';
+import netflixHomeVideo from './assets/netflix-home-video.mp4';
+import devicesVideo from './assets/video-devices.mp4';
+import allDevices from './assets/all-devices-img.png';
+import childrenBanner from './assets/children-banner.png';
+import strangerThingsPoster from './assets/strangerthings-poster.png'
 import FAQSection from './components/FAQ';
 import { footerlinks } from './data/FooterData';
 
@@ -39,7 +44,7 @@ const App = () => {
             <img className='' src={tvFrame} alt="Tv Frame image" />
             <div className="absolute max-w-[73%] max-h-[54%] w-full h-full top-[21%] left-[13%] -z-[1] overflow-hidden">
               <video className='' autoPlay muted playsInline loop>
-                <source src='./src/assets/netflix-home-video.m4v' />
+                <source src={netflixHomeVideo} />
               </video>
             </div>
           </div>
@@ -53,7 +58,7 @@ const App = () => {
               <img className='' src={downloadMobileImage} alt="Download Mobile Image" />
               <div className="absolute flex items-center w-[75%] md:w-[65%] lg:w-[65%] xl:w-1/2 left-[50%] -translate-x-1/2 bottom-[8%] bg-black shadow-[0_0_2em_0_black] px-3 py-2 border-2 border-[#808080b3] rounded-xl">
                 <div className="mr-4">
-                  <img className='h-12 md:h-16 lg:h-20' src='./src/assets/strangerthings-poster.png' alt="strangerthings poster" />
+                  <img className='h-12 md:h-16 lg:h-20' src={strangerThingsPoster} alt="strangerthings poster" />
                 </div>
                 <div className="flex-1">
                   <div className="text-base leading-5">Stranger Things</div>
@@ -79,10 +84,10 @@ const App = () => {
             <h4 className='text-lg text-center pb-4 lg:text-2xl leading-5 md:leading-7 shrink-0'>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h4>
           </div>
           <div className="relative basis-1/2">
-            <img className='' src='./src/assets/all-devices-img.png' alt="All devices image" />
+            <img className='' src={allDevices} alt="All devices image" />
             <div className="absolute max-w-[63%] max-h-[47%] w-full h-full top-[34%] left-[50%] -translate-x-1/2 -translate-y-1/2 -z-[1] overflow-hidden">
               <video className='' autoPlay muted playsInline loop>
-                <source src='./src/assets/video-devices.' />
+                <source src={devicesVideo} />
               </video>
             </div>
           </div>
@@ -93,7 +98,7 @@ const App = () => {
         <div className="max-w-[calc(100%-4rem)] xl:max-w-[calc(83.34%-6rem)] m-auto flex flex-col-reverse lg:flex-row items-center justify-center">
           <div className="flex flex-col basis-1/2 items-center justify-center">
             <div className="relative">
-              <img className='' src='./src/assets/children-banner.png' alt="Children banner" />
+              <img className='' src={childrenBanner} alt="Children banner" />
             </div>
           </div>
           <div className="flex flex-col basis-1/2 justify-center">
@@ -116,7 +121,8 @@ const App = () => {
                 </path>
               </svg>
             </button>
-          </form>        </div>
+          </form>
+        </div>
       </section>
 
       <footer className='py-8 lg:py-20 max-w-[calc(100%-4rem)] xl:max-w-[calc(83.834%-6rem)] m-auto text-[#ffffffb3]'>
